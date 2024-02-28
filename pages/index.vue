@@ -56,7 +56,6 @@
 </template>
 
 <script>
-import Treeselect from "vue3-treeselect";
 import "vue3-treeselect/dist/vue3-treeselect.css";
 export default {
   data() {
@@ -77,20 +76,18 @@ export default {
   methods: {
     async search() {
       let criteria = { criteria: this.criteria, page: this.Page };
-      console.log(criteria);
-      const { data, pending, error, refresh } = await useAsyncData(() =>
+
+      const { data} = await useAsyncData(() =>
         $fetch("http://localhost:3002", {
           method: "post",
           body: criteria,
         })
       );
-
       this.list = await JSON.parse(JSON.stringify(data._value));
     },
   },
 };
 
-// console.log(NameList);
 </script>
 <style>
 body{
