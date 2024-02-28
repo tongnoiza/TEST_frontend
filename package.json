@@ -1,0 +1,48 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@bootstrap-vue-next/nuxt": "^0.15.5",
+    "@iconify-json/bi": "^1.1.21",
+    "@invictus.codes/nuxt-vuetify": "^0.3.0",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-rc.3-28355664.532e9d7",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/i18n": "^8.0.0-rc.9",
+    "@sidebase/nuxt-auth": "^0.6.3",
+    "@types/bootstrap": "^5.2.10",
+    "@vue/compiler-sfc": "^3.4.20",
+    "bootstrap": "^5.3.2",
+    "bootstrap-vue-next": "^0.15.5",
+    "nuxt": "^3.8.1",
+    "nuxt-icon": "^0.6.8",
+    "unplugin-icons": "^0.18.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.6"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.3.67",
+    "@nuxtjs/google-fonts": "^3.1.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/nuxt": "^10.6.1",
+    "firebase": "^10.6.0",
+    "pinia": "^2.1.7",
+    "vue-simple-search-dropdown": "^1.0.1",
+    "vue3-treeselect": "^0.1.10"
+  },
+  "types": "module",
+  "overrides": {
+    "vue-i18n": "^9.3.0-beta.14"
+  }
+}
